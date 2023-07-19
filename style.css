@@ -280,7 +280,7 @@ main section {
 .list-content li {
     margin-bottom: 10px;
 }
-
+/* gallery*/
 .area-1 {
     display: flex;
     flex-direction: row;
@@ -295,7 +295,6 @@ main section {
     margin-bottom: 50px;
     height: 200px;
     width: 100%;
-    background-color: aqua;
     line-height: 20px;
 }
 
@@ -329,7 +328,7 @@ main section {
     border: 1px solid #FF42A5;
     padding: 2px 4px;
     color: #FF42A5;
-    width: 200px;
+    width: max-content;
 }
 
 /* footer */
@@ -386,12 +385,79 @@ main section {
     margin-top: 20px;
 }
 /*---------RESPONSIVE-----------*/
+
 @media screen and (max-width:576px) {
-    .heading,.heading-menu,.banner-section{
+    
+    main section, .heading-menu{
+        padding:0;
+        margin: 0px;
+    }
+    .heading,.heading-menu,.list-1,.Online-Games{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 800px;
+    }
+    .list-1 li{
+        margin:20px 0px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        width: 800px;
+    }
+  
+    .we-are-gamer , .online-games-pic , .play-optional{
+        flex-direction: column;
+        text-align: center;
+        width: 800px;
+    }
+    .play-img-1 {
+        width: 400px;
+    }
+    .play-description{
+        margin:40px;
+        text-align: center;
+    }
+    .play-optional{
+        margin-bottom: 140px;
+        margin-left: 30px;
+        align-items: center;
+    }
+    .play-img {
+        width: 200px;
+        position: relative;
+        top:100px;
+        right:470px;
+    }
+    
+    .play-img-2 {
+        width: 180px;
+        position: relative;
+        top: 70px;
+        left:-70px;
+    }
+    .playy{
+        flex-direction: column-reverse;
+    }
+    .sec {
+        margin: 0px 10px;
+        text-align: center;
+    }
+    .careers{
         flex-direction: column;
     }
-   
-
+    .careers-img{
+        width: 100%;
+    }
+    
+    .area-2{
+        padding:10px;
+        margin: 10px;
+    }  
+    footer ,.careers  {
+        width: 830px;
+        flex-wrap: wrap;
+    }
 }
 
 
