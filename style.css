@@ -43,13 +43,16 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .gamer {
     margin-left: 15px;
 }
-.heading-title img{
+
+.heading-title img {
     height: 30px;
     width: 45px;
 }
+
 .heading-menu li {
     list-style: none;
     margin-right: 32px;
@@ -128,9 +131,11 @@ nav {
 .banner-btn-2 {
     background-color: #4EC5F7;
 }
-.banner-description{
-  background: url('images/Group\ 14.png');
+
+.banner-description {
+    background: url('images/Group\ 14.png');
 }
+
 main section {
     margin-top: 20px;
     padding: 0px 180px;
@@ -180,21 +185,42 @@ main section {
 
 .online-games-img {
     height: 350px;
+    position: relative;
+    display: inline-block;
+}
+
+.online-games-img:hover .online-games-image {
+    opacity: 0;
+    transition: 0.01s;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 295px;
+    border-radius: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    gap: 10px;
+    transition: 0.01s;
+    border: 1px solid #F948B2;
+}
+
+.online-games-img:hover .text-overlay {
+    opacity: 1;
 }
 
 .Online-Games .primary-description {
     margin-top: 10px;
     margin-bottom: 20px;
-}
-
-.hover-p {
-    display: none;
-}
-
-.online-games-image:hover {
-    border: solid #F948B2;
-    width: 245px;
-    height: 285px;
 }
 
 /* play optional */
@@ -280,6 +306,7 @@ main section {
 .list-content li {
     margin-bottom: 10px;
 }
+
 /* gallery*/
 .area-1 {
     display: flex;
@@ -309,7 +336,6 @@ main section {
     flex-direction: row;
     align-items: center;
     margin: 0px 40px;
-    
     gap: 4px;
 }
 
@@ -317,18 +343,18 @@ main section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px 150px;
+    margin: 20px 150px;
     font-size: 14px;
- 
+
 }
 
 .area-1 div:hover,
 .area-2 div:hover {
-    border-radius: 50px;
+    border-radius: 25px;
     border: 1px solid #FF42A5;
-    padding: 2px 4px;
     color: #FF42A5;
-    width: max-content;
+    transform: linear;
+    padding: 2px;
 }
 
 /* footer */
@@ -381,102 +407,102 @@ main section {
     font-size: 16px;
     margin-top: 60px;
 }
-.footer-last-line{
+
+.footer-last-line {
     margin-top: 20px;
 }
+
 /*---------RESPONSIVE-----------*/
 
 @media screen and (max-width:576px) {
-    
-    main section, .heading-menu{
-        padding:0;
+
+    main section,
+    .heading-menu {
+        padding: 0;
         margin: 0px;
     }
-    .heading,.heading-menu,.list-1,.Online-Games{
+
+    .heading,
+    .heading-menu,
+    .list-1,
+    .Online-Games {
         flex-direction: column;
         justify-content: center;
         text-align: center;
         width: 800px;
     }
-    .list-1 li{
-        margin:20px 0px;
+
+    .list-1 li {
+        margin: 20px 0px;
     }
-    .banner-section{
+
+    .banner-section {
         flex-direction: column-reverse;
         width: 800px;
     }
-  
-    .we-are-gamer , .online-games-pic , .play-optional{
+
+    .we-are-gamer,
+    .online-games-pic,
+    .play-optional {
         flex-direction: column;
         text-align: center;
         width: 800px;
     }
+
     .play-img-1 {
         width: 400px;
     }
-    .play-description{
-        margin:40px;
+
+    .play-description {
+        margin: 40px;
         text-align: center;
     }
-    .play-optional{
+
+    .play-optional {
         margin-bottom: 140px;
         margin-left: 30px;
         align-items: center;
     }
+
     .play-img {
         width: 200px;
         position: relative;
-        top:100px;
-        right:470px;
+        top: 100px;
+        right: 470px;
     }
-    
+
     .play-img-2 {
         width: 180px;
         position: relative;
         top: 70px;
-        left:-70px;
+        left: -70px;
     }
-    .playy{
+
+    .playy {
         flex-direction: column-reverse;
     }
+
     .sec {
         margin: 0px 10px;
         text-align: center;
     }
-    .careers{
+
+    .careers {
         flex-direction: column;
     }
-    .careers-img{
+
+    .careers-img {
         width: 100%;
     }
-    
-    .area-2{
-        padding:10px;
+
+    .area-2 {
+        padding: 10px;
         margin: 10px;
-    }  
-    footer ,.careers  {
+    }
+
+    footer,
+    .careers {
         width: 830px;
         flex-wrap: wrap;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
